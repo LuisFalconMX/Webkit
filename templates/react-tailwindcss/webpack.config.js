@@ -29,11 +29,13 @@ module.exports = (env, argv) => {
   config.resolve = {
     extensions: ['.js', '.jsx'],
     alias: {
-      '@images': path.resolve(__dirname, 'src/assets/images/'),
-      '@fonts': path.resolve(__dirname, 'src/assets/fonts/'),
       '@components': path.resolve(__dirname, 'src/components/'),
       '@containers': path.resolve(__dirname, 'src/containers/'),
-      '@styles': path.resolve(__dirname, 'src/styles/')
+      '@hooks': path.resolve(__dirname, 'src/hooks/'),
+      '@routes': path.resolve(__dirname, 'src/routes/'),
+      '@images': path.resolve(__dirname, 'src/assets/images/'),
+      '@icons': path.resolve(__dirname, 'src/assets/icons/'),
+      '@videos': path.resolve(__dirname, 'src/assets/videos/')
     }
   }
 
@@ -49,7 +51,8 @@ module.exports = (env, argv) => {
       host: HOST,
       port: 3000,
       contentBase: path.join(__dirname, 'dist'),
-      compress: true
+      compress: true,
+      historyApiFallback: true
     }
   }
 
