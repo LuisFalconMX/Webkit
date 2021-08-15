@@ -1,9 +1,13 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const NotFound = () => (
-  <section>
+  <>
+    <Helmet>
+      <title>404 - NotFound</title>
+    </Helmet>
     <h1>NotFound page</h1>
-  </section>
+  </>
 )
 
 export default NotFound
