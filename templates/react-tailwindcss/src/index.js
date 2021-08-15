@@ -21,5 +21,5 @@ ReactDOM.render(
       <Footer />
     </Suspense>
   </BrowserRouter>,
-  document.body
+  document.getElementById('app')
 )
