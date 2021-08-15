@@ -1,0 +1,12 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "eslint.alwaysShowStatus": true,
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  }
+}
