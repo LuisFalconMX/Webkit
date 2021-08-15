@@ -4,7 +4,7 @@
   "description": "React and tailwindcss template",
   "main": "src/index.js",
   "scripts": {
-    "start": "npm run dev",
+    "start": "yarn dev",
     "dev": "NODE_ENV=development webpack serve --mode development",
     "build": "NODE_ENV=production webpack --mode production",
     "deploy": "gh-pages -d dist"
