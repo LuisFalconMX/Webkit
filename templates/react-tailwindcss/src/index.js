@@ -2,6 +2,8 @@ import React, { Suspense, lazy } from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import 'tailwindcss/tailwind.css'
+import './i18n'
+
 import Navbar from '@components/Navbar'
 import Footer from '@components/Footer'
 
@@ -10,14 +12,14 @@ const NotFound = lazy(() => import('@routes/NotFound'))
 
 ReactDOM.render(
   <BrowserRouter>
-    <Navbar />
     <Suspense fallback={<div>Loading...</div>}>
+      <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route component={NotFound} />
       </Switch>
+      <Footer />
     </Suspense>
-    <Footer />
   </BrowserRouter>,
   document.body
 )
